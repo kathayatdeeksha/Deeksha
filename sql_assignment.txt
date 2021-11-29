@@ -1,0 +1,7 @@
+sql assignment
+
+CREATE TABLE `sakila`.`actor` (
+  `idactor` INT NOT NULL,
+  `first_name` VARCHAR(45) NULL,
+  `last_name` VARCHAR(45) NULL,
+  PRIMARY KEY (`idactor`));

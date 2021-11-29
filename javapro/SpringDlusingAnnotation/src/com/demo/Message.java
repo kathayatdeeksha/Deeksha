@@ -40,6 +40,9 @@ public class Message {
 	public void show() {
 		writeMessage.WriteMessage();
 		
+		System.out.println("deeksha is a good girl");
+		
 	}
 
 }
+
