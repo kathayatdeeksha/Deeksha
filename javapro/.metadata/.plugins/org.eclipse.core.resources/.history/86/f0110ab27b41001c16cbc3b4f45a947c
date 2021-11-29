@@ -1,0 +1,13 @@
+package com.demo.service;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class StudentService {
+	
+	
+	
+	static SessionFactory sessionfactoryobj;
+	static Session sessionobj;
+
+}

@@ -1,0 +1,58 @@
+package com.demo.service;
+
+import org.hibernate.Hibernate;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.demo.dao.StudentDAO;
+import com.demo.pojo.Student;
+import com.demo.util.HibernetUtil;
+
+public class StudentDao implements StudentDAO{
+	
+	
+	
+	
+	static SessionFactory sessionfactoryobj;
+	static Session sessionObj;
+	
+	
+	@Override
+	public Student createStudent(Student student) {
+		
+		
+		Transaction tx=null;
+		//enable the session by calling opensession method
+		
+		try {
+		
+		sessionObj =HibernetUtil.buildSessionFactory().openSession();
+		tx = sessionObj.beginTransaction();
+		
+		//create  an object of student class
+		Student stude = new Student();
+		//insert record
+		stude.setStudname("Ram");
+		stude.setAge("21");
+		
+		sessionObj.save(stude); //insert into table and formed the sql query automatically"insert into studen values(?,?)
+		tx.commit(); 
+		
+		
+		
+		
+		
+		return student;
+		}catch(Exception e) {
+			
+			if (tx !=null)
+				tx.rollback();
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+
+}

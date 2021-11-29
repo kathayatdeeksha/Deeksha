@@ -1,0 +1,15 @@
+package com.demo.service;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class StudentDao implements{
+	
+	
+	
+	static SessionFactory sessionfactoryobj;
+	static Session sessionobj;
+	
+	
+
+}

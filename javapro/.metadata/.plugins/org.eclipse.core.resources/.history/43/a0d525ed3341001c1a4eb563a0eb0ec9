@@ -1,0 +1,26 @@
+<map>
+<!-- add value here -->
+
+<entry key="1" value="ram"/>
+<entry key="2" value="tom"/>
+</map>
+</property>
+
+
+<property  name="addressproperties">
+
+<props>
+<!-- add value here -->
+
+
+<prop key="one">MP</prop>
+<prop key="two">delhi</prop>
+</props>
+</property>
+
+
+
+
+
+</bean>
+</beans>
