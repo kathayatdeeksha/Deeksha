@@ -1,13 +1,13 @@
-package com.demo;
+package com.airport.AirlineProject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SprinbootdemoApplication {
+public class AirlineProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SprinbootdemoApplication.class, args);
+		SpringApplication.run(AirlineProjectApplication.class, args);
 	}
 
 }
